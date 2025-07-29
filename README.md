@@ -79,4 +79,4 @@ All endpoints are prefixed with `/api/v1`.
 
 ## Documentation 
 
-* `https://documenter.getpostman.com/view/22975549/2sB3B8qsBy#834d20f9-d74f-4f4f-af9d-ed632c30cd1d`
+* [Postman API Documentation](https://documenter.getpostman.com/view/22975549/2sB3B8qsBy#834d20f9-d74f-4f4f-af9d-ed632c30cd1d)
