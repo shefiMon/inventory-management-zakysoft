@@ -13,7 +13,7 @@ Route::prefix('v1')->group(function () {
 
     Route::prefix('auth')->group(function () {
         Route::post('/login', [\App\Http\Controllers\Auth\ApiAuthController::class, 'store']);
-        Route::post('/logout', [\App\Http\Controllers\Auth\ApiAuthController::class, 'destroy']);
+        Route::post('/logout', [\App\Http\Controllers\Auth\ApiAuthController::class, 'destroy'])->middleware('auth:sanctum');
 
     });
 
