@@ -1,6 +1,15 @@
 # Inventory Management API
 
-This is a Laravel-based API for managing inventory, products, and stock movements.
+ Inventory Management API with Advanced Optimization
+
+## Prerequisites
+*   PHP : ^8.2
+*   Composer
+*   MySQL/MariaDB
+*   Laravel 12.x
+*
+
+
 
 ## Features
 
@@ -50,16 +59,16 @@ All endpoints are prefixed with `/api/v1`.
 ### Authentication
 * test user  : test@example.com  psw: password
 *   `POST /api/v1/auth/login`: Authenticate a user and receive a Sanctum token.
-*   `POST /auth/logout`: Log out the authenticated user.
+*   `POST /api/v1/auth/logout`: Log out the authenticated user.
 
-### Inventory
+### Inventory report
 
 *   `GET /api/v1/inventory/report`: Get an inventory report.
 * `/api/v1/inventory/report?product_id=1&warehouse_id=10`
 
 ### Stock Movement
 
-*   `POST /stock-movement`: Create a new stock movement (requires authentication).
+*   `POST /api/v1/stock-movementstock-movement`: Create a new stock movement (requires authentication).
 {
     "product_id":1,
     "warehouse_id":10,
@@ -68,3 +77,6 @@ All endpoints are prefixed with `/api/v1`.
     "movement_date":"2025-07-27"
 }
 
+## Documentation 
+
+* `https://documenter.getpostman.com/view/22975549/2sB3B8qsBy#834d20f9-d74f-4f4f-af9d-ed632c30cd1d`
